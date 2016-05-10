@@ -59,3 +59,59 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
+#tylerHead {
+  position: relative;
+  left: 40%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+}
+
+#tylerNeck {
+  position: relative;
+  left: 48%;
+  background-color: black;
+  height: 20px;
+  width: 10px;
+}
+
+
+#tylerLeftArm {
+  background-color: black;
+  height: 20px;
+  width: 125px;
+}
+#tylerRightArm {
+  background-color: black;
+  height: 20px;
+  width: 125px;
+}
+
+#tylerBody {
+  background-color: black;
+  height: 175px;
+  width: 300px;
+}
+
+#tylerLeftLeg {
+  background-color: black;
+  height: 75px;
+  width: 20px;
+}
+#tylerRightLeg {
+  background-color: black;
+  height: 75px;
+  width: 20px;
+}
+
+#tylerTorso {
+  display: flex;
+  justify-content: center;
+}
+
+#tylerBottom {
+  display: flex;
+  justify-content: space-around;
+}
