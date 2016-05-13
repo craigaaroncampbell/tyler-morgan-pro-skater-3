@@ -8,7 +8,7 @@ window.addEventListener("keyup", keyboard, false);
 function keyboard(e) {
   console.log(e.keyCode)
   if (e.keyCode === 37) {
-    xPosition--;
+    xPosition-=5;
     console.log(xPosition);
     clear();
     drawTyler();
@@ -16,7 +16,7 @@ function keyboard(e) {
   }
 
    if (e.keyCode === 39) {
-    xPosition++;
+    xPosition+=5;
     console.log(xPosition)
     clear();
     drawTyler();
