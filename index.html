@@ -4,23 +4,16 @@
   <meta charset="UTF-8">
   <title>Tyler Morgan's Pro Skater 3</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body>
+    <canvas id="viewport"></canvas>
+  <h1>Tyler Morgan's Pro Skater 3!</h1>
+   <h2>Press Left and Right Arrow Keys to skate!</h2>
+
   <main>
     <section id="skateboardContainer">
-      <section id="Tyler">
-        <div id="tylerHead"></div>
-        <div id="tylerNeck"></div>
-        <div id="tylerTorso">
-          <div id="tylerLeftArm"></div>
-          <div id="tylerBody"></div>
-          <div id="tylerRightArm"></div>
-        </div>
-        <div id="tylerBottom">
-          <div id="tylerLeftLeg"></div>
-          <div id="tylerRightLeg"></div>
-        </div>
-      </section>
+      <img src="tyler.png" alt="tyler">
       <div id="deck"></div>
       <div id="wheelContainer">
         <div id="leftwheel" class="wheel"></div>
@@ -29,5 +22,6 @@
     </section>
   </main>
   <footer id="ground"></footer>
+  <script src="app.js"></script>
 </body>
 </html>

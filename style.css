@@ -1,6 +1,11 @@
+canvas#viewport {
+  border: 1px solid white;
+  width: 200px;
+  float: right;
+}
+
 body {
-  height: 100%;
-  min-height: 1000px;
+  background-color: teal;
 }
 
 @keyframes skate {
@@ -8,20 +13,31 @@ body {
     left: 0;
   }
   50% {
-    left: 50%;
+    left: 40%;
   }
   100% {
-    left: 100%;
+    left: 80%;
   }
 }
 
+@keyframes spin {
+  0% {
+  transform:rotate(0deg);
+  }
+  50% {
+  transform:rotate(180deg);
+  }
+  100% {
+  transform:rotate(360deg);
+  }
+}
 
 #skateboardContainer {
   position: relative;
   left: 0;
-  width: 200px;
+  width: 180px;
   animation-name: skate;
-  animation-duration: 2.5s;
+  animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -33,24 +49,20 @@ body {
   background-color: blue;
 }
 
-#leftwheel{
+#leftwheel, #rightwheel{
   border-radius: 50%;
   height: 30px;
   width: 30px;
-  background-color: black;
-}
-
-#rightwheel{
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  background-color: black;
+  background-image: url("wheel.png");
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #ground {
-  position: relative;
-  bottom: 0px;
-  height: 50px;
+  height: 20px;
   background-color: green;
 }
 
@@ -60,58 +72,11 @@ body {
   justify-content: space-around;
 }
 
-#tylerHead {
-  position: relative;
-  left: 40%;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  background-color: black;
+img {
+  height: 180px;
+  width: 180px;
 }
 
-#tylerNeck {
-  position: relative;
-  left: 48%;
-  background-color: black;
-  height: 20px;
-  width: 10px;
-}
-
-
-#tylerLeftArm {
-  background-color: black;
-  height: 20px;
-  width: 125px;
-}
-#tylerRightArm {
-  background-color: black;
-  height: 20px;
-  width: 125px;
-}
-
-#tylerBody {
-  background-color: black;
-  height: 175px;
-  width: 300px;
-}
-
-#tylerLeftLeg {
-  background-color: black;
-  height: 75px;
-  width: 20px;
-}
-#tylerRightLeg {
-  background-color: black;
-  height: 75px;
-  width: 20px;
-}
-
-#tylerTorso {
-  display: flex;
-  justify-content: center;
-}
-
-#tylerBottom {
-  display: flex;
-  justify-content: space-around;
+canvas {
+  float: left;
 }
